@@ -40,12 +40,19 @@ class APIFETCH extends Component {
                 <div className="main_div">
                     <div className="main_input">
                         <div className="main_input1">
-                            <h3>Devfinder</h3>
-                            <button>light</button>
+                            <h3>devfinder</h3>
+                            <div className = "uppertext">
+                                
+                                <div className = "uppertext2">
+                                 <p>LIGHT</p>
+                                 <img src = "icon-sun.svg"></img>
+                                </div>
+                            </div>
                         </div>
 
                         <form onSubmit={this.fetchapi}>
                             <div className="input_button">
+                                <img src="search.png" ></img>
                                 <input type="text" onChange={this.userinput} placeholder="Search Github Username...">
                                 </input>
                                 <button type="submit">search</button>
@@ -60,14 +67,14 @@ class APIFETCH extends Component {
                                         <div className="output11"> <img src={data.avatar_url} width="90%" height="130px"></img> </div>
                                         <div className="output12">
                                             <div className="output121">
-                                                <p>{data.login}</p>
-                                                <p>{moment(data.created_at).format('MMMM DD yyyy')}</p>
+                                                <h3>{data.login}</h3>
+                                                <p> joined {moment(data.created_at).format(' DD MMMM yyyy')}</p>
                                             </div>
                                             <div className="output122" >
-                                                <p>{data.login}</p>
+                                                <h4>{data.login}</h4>
                                             </div>
                                             <div className="output123">
-                                                <p> bio {data.bio}</p>
+                                                <p>  {data.bio === null?'This profile has no bio':data.bio}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -96,13 +103,13 @@ class APIFETCH extends Component {
                                         </div>
                                         <div className="output32">
                                             <div className="output321">
-                                                <p><img src="location.png" width = "20px" height = "20px"></img>{data.location}</p>
+                                                <p><img src="location.png" width = "20px" height = "20px"></img>{data.location === null?'Location unavailable':data.location}</p>
                                             </div>
                                             <div className="output322">
-                                                <p><img src="twitter.png" width = "20px" height = "20px"></img>{data.twitter_username}</p>
+                                                <p><img src="twitter.png" width = "20px" height = "20px"></img>{data.twitter_username === null?'NO Twitter linked':data.twitter_username}</p>
                                             </div>
                                             <div className="output323">
-                                                <p><img src="link.png" width = "20px" height = "20px"></img>{data.blog}</p>
+                                                <p><img src="link.png" width = "20px" height = "20px"></img>{data.blog === ""?'This profile has no blog':data.blog}</p>
                                             </div>
                                             <div className="output324">
                                                 <p><img src="link.png" width = "20px" height = "20px"></img>{data.id}</p>
