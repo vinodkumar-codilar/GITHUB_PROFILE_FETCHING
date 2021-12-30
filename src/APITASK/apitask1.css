@@ -4,6 +4,15 @@ body{
     
     
 }
+.container1{
+    background-color: rgb(1, 30, 34);
+    width: 100%;
+    height: 750px;
+    
+     display: flex;
+     justify-content: center;
+     overflow-x: hidden;
+}
 
 .container{
     width: 100%;
@@ -45,6 +54,13 @@ svg{
     width: 20px;
     color: white;
 }
+.input_button1{
+    display: flex;
+    background-color: #080800;
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+}
 .input_button{
     display: flex;
     background-color: #1f2a48;
@@ -59,6 +75,17 @@ svg{
   width: 30px;
   height: 30px;
     
+}
+.input_button1 input{
+    margin-top: 5px;
+    margin-left: 5%;
+    width: 70%;
+    height: 45px;
+    background-color: #080800;
+    color: white;
+    outline: none;
+  border: none;
+  font-size: 20px;
 }
 .input_button input{
     margin-top: 5px;
@@ -75,6 +102,17 @@ svg{
 .input_button input::placeholder{
     color: white;
 }
+.input_button1 button{
+    margin-top: 9px;
+    margin-right: 5%;
+    height: 35px;
+    width: 13%;
+    border-radius: 10px;
+    background-color: rgb(49, 49, 48);
+    border: none;
+    color: white;
+}
+
 .input_button button{
     margin-top: 9px;
     margin-right: 5%;
@@ -86,6 +124,14 @@ svg{
     color: white;
     
 }
+.main_output_one{
+    width: 100%;
+    height: 550px;
+    background-color: #080800;
+    margin-top: 15px;   
+    border-radius: 10px;
+}
+
 .main_output{
     width: 100%;
     height: 550px;
