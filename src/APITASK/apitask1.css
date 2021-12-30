@@ -21,15 +21,13 @@ svg{
 }
 
 .main_input1{
-   
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
 }
 .uppertext{
-   
-    
     width: 13%;
 }
 .uppertext2{
@@ -83,7 +81,7 @@ svg{
 }
 .main_output{
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-color: #1f2a48;
     margin-top: 15px;   
     border-radius: 10px;
@@ -198,12 +196,21 @@ svg{
 
 
 @media (max-width:300px) {
+    .main_input1{
+        font-size: 10px;
+    }
+    .uppertext2{
+        display: block;
+    }
     .input_button input{
         width: 60%;
         height: 25px;
+        font-size: 10px;
     }
     .input_button button{
+        width: 15%;
         height: 25px;
+        font-size: 10px;
     }
     .output121{
         font-size: 10px;
@@ -214,6 +221,7 @@ svg{
     }
     .output21{
         width: 100%;
+       
     }
     .output31{
         width: 0%;
@@ -227,15 +235,24 @@ svg{
     
 }
 @media (max-width:600px) {
+    .main_input1{
+        font-size: 10px;
+    }
+    .uppertext2{
+        display: block;
+    }
     .input_button input{
         width: 80%;
         height: 35px;
+        font-size: 15px;
     }
     .input_button button{
+        width: 25%;
         height: 35px;
+        font-size: 10px;
     }
     .output121{
-        font-size: 15px;
+        font-size: 10px;
     }
     .output22{
         width: 0%;
@@ -263,7 +280,7 @@ svg{
         height: 45px;
     }
     .output121{
-        font-size: 15px;
+        font-size: 10px;
     }
     .output22{
         width: 0%;
