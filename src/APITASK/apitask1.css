@@ -16,6 +16,9 @@ body{
     height: 700px;
     
 }
+svg{
+    fill: white;
+}
 
 .main_input1{
    
@@ -48,8 +51,8 @@ body{
     border-radius: 10px;
     
 }
-.input_button img{
-  
+.input_button svg{
+  fill: blue;
   margin: 15px 25px;
   width: 30px;
   height: 30px;
@@ -80,7 +83,7 @@ body{
 }
 .main_output{
     width: 100%;
-    height: 500px;
+    height: 400px;
     background-color: #1f2a48;
     margin-top: 15px;   
     border-radius: 10px;
@@ -104,7 +107,7 @@ body{
 
 }
 .output11 img{
-    width: 75%;
+    width: 55%;
     height: 75%;
     border-radius: 100%;
 }
@@ -123,9 +126,12 @@ body{
     font-size: 15px;
 
 }
+.output121 p{
+    color: rgba(245, 245, 245, 0.596);
+}
 .output122{
    
-    color: blue;
+    color: rgb(7, 7, 43);
    display: flex;
    justify-content: flex-start;
     
@@ -133,6 +139,7 @@ body{
 .output123{
     display: flex;
     justify-content: flex-start;
+    color: rgba(245, 245, 245, 0.596);
 }
 .output2{
     display: flex;
@@ -147,13 +154,16 @@ body{
     background-color: rgba(12, 12, 12, 0.534);
     border-radius: 20px;
     color: white;
-    width: 55%;
-    height: 70px;
+    width: 50%;
+    height: 60px;
     display: flex;
     justify-content: space-between;
-    padding: 15px 15px;
+    padding: 15px 35px 25px 15px;
    
 
+}
+.output21 p{
+    color: rgba(245, 245, 245, 0.596);
 }
 .output3{
     display: flex;
@@ -166,12 +176,24 @@ body{
    
 }
 .output32{
-    width: 70%;
-    height: 150px;
+    width: 60%;
+    height: 100px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    text-align: start;
+    grid-gap: 6px;
+    margin-top: 10px;
+   
     
+    
+}
+.output32 div{
+ 
+   display: flex;
+    color: rgba(245, 245, 245, 0.596);
+    align-items: center;
+}
+.output32 div p{
+    margin-left: 15px;
 }
 
 
